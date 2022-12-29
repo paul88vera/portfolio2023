@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,100;1,400&display=swap');
 
 :root {
-  --main-bg-color: rgb(50, 50, 50);
-  --accent-bg-color: rgb(47, 180, 89);
+  --main-bg-color: #242424;
+  --secondary-bg-color: #1c1d1d;
+  --tri-bg-color:rgb(249, 249, 249);
+  --accent-bg-color: #198f91;
+  --heading-color: rgb(221, 221, 221);
+
 }
 * {
   margin: 0;
@@ -14,19 +18,35 @@
   display: none;
   font-size: 18px;
 }
-.nav ul {
-  text-align: left;
-}
-.nav ul li{
+.aside-nav {
   display: block;
-  width: 100%;
+}
+.aside-nav ul {
+  text-align: left;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aside-nav ul li{
+  padding-left: 1em;
   list-style-type: none;
 }
-.nav ul li a {
+.aside-nav ul li a {
+  display: block;
   text-decoration: none;
   color: #fff;
-  width: 100%;
   font-size: 18px;
+  padding: .3em;
+}
+.aside-nav ul li a::before {
+  content: "...";
+  padding-left: .3em;
+  padding-right: 1em;
+}
+
+.aside-nav ul li a:hover {
+  color: var(--accent-bg-color);
 }
 #aside h2 {
   background-color: var(--accent-bg-color);
@@ -112,25 +132,138 @@
 #about-para {
   min-width: 300px;
 }
-#about h1 {
+#about h1, #experience h1, #portfolio h1 {
   padding: 1em 0 0 0;
-  color: rgb(203, 203, 203);
+  color: var(--heading-color);
+  font-size: 3rem;
+  font-weight: 600;
+}
+#about h3, #experience h3, #portfolio h3 {
+  font-size: 1.5rem;
 }
 #social-cont ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   height: auto;
-  list-style-type: disc;
+  list-style-type: none;
   gap: 1em;
   font-weight: 600;
+}
+#social-cont ul li::before {
+  content: "+";
+  padding-right: .5em;
+  color: var(--accent-bg-color);
+  font-weight: 600;
+}
+/** EXPERIENCE SECTION - START */
+#experience {
+  padding: 4em 3em;
+  background-color: var(--tri-bg-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+#experience-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.card-container-1, .card-container-2 {
+  padding: 2em 0em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 1200px;
+  gap: 3em;
+  margin: 0em 1.5em;
+}
+.card-container-2::before, #experience::after {
+  content: "|";
+  color: var(--accent-bg-color);
+  font-weight: 600;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  min-width: 350px;
+  width: 450px;
+  max-width: 600px;
+  text-align: left;
+}
+.card-box {
+  padding-left: 1em;
+  align-items: flex-start;
+}
+.card-box::before {
+  content: "...";
+  position: absolute;
+  left: 20px;
+  color: var(--accent-bg-color);
+  font-weight: 600;
+}
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.card-subtext {
+  font-size: 18px;
+}
+.card-para {
+  font-size: 14px;
+}
+/** PORTFOLIO SECTION - START */
+#portfolio {
+  background-color: var(--tri-bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 4em;
+}
+#port-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+#port-nav {
+  padding: 3em 0em;
+  display: flex;
+}
+#port-nav ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:flex-start;
+  list-style: none;
+}
+#port-nav ul li a {
+  padding: 1em ;
+  border-bottom: solid var(--heading-color);
+  text-decoration: none;
+  color: var(--secondary-bg-color);
+}
+#port-nav ul li a:focus {
+  border-bottom: solid var(--accent-bg-color);
+  color: var(--accent-bg-color);
+}
+#port-nav ul li a:hover {
+  color: var(--accent-bg-color);
 }
 @media screen and (min-width:987px) {
   #intro-container {
     width: 60%;
   }
-}
-@media screen and (min-width:768px) {
   #aside {
     position: fixed;
     display: flex;
@@ -138,10 +271,17 @@
     height: 100%;
     max-width: 210px;
     text-align: center;
-    background-color: var(--main-bg-color);
+    background-color: var(--secondary-bg-color);
   }
-  #main, #intro, #about {
+  #main, #intro, #about, #experience, #portfolio {
     margin-left: 210px;
+  }
+}
+@media screen and (min-width:768px) {
+  .card-container-2::before {
+    content: "-";
+    position: relative;
+    left: 0;
   }
   #intro-container {
     width: 60%;
