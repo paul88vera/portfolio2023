@@ -13,6 +13,19 @@
   padding: 0;
   font-family: "Poppins", san-serif;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--tri-bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-bg-color);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-bg-color);
+}
 /** ASIDE SECTION - START */
 #aside {
   display: none;
@@ -60,20 +73,26 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: var(--main-bg-color);
 }
 #main-nav {
   background-color: transparent;
   position: absolute;
-  padding: 1em;
-  
+  display: none;
+  width: fit-content;
 }
 #main-nav ul {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   gap: 1em;
+}
+#main-nav ul li {
+  display: flex;
+  justify-content: space-evenly;
 }
 #main-nav ul li a {
   color: #fff;
@@ -84,7 +103,8 @@
 #intro {
   display: flex;
   align-content: center;
-  height: 100vh;
+  height: auto;
+  padding: 3em 0;
   color: #fff;
   font-size: 18px;
   background-color: var(--main-bg-color);
@@ -102,11 +122,14 @@
 #intro span {
   color: var(--accent-bg-color);
 }
+
 .btn {
   background-color: var(--accent-bg-color);
   color: #fff;
-  padding: .8em 0;
+  padding: .8em 1em;
   max-width:300px;
+  color: #fff;
+  text-decoration: none;
 }
 .btn:hover{
   scale: 102%;
@@ -125,7 +148,6 @@
 }
 #about .img-cont {
   margin: 0 auto;
-  width: 400px;
   max-width: 500px;
   padding: 3em 0em 0em 0em;
 }
@@ -158,7 +180,7 @@
 }
 /** EXPERIENCE SECTION - START */
 #experience {
-  padding: 4em 3em;
+  padding: 4em 0em;
   background-color: var(--tri-bg-color);
   text-align: center;
   display: flex;
@@ -196,8 +218,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2em;
-  min-width: 350px;
-  width: 450px;
+  min-width: 300px;
   max-width: 600px;
   text-align: left;
 }
@@ -227,31 +248,43 @@
   background-color: var(--tri-bg-color);
   display: flex;
   flex-direction: column;
-  padding: 4em;
+  padding: 0em 1em;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 #port-header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tri-bg-color);
+}
+#port-nav {
+  padding: 3em 0em;
+  gap: 3em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-end;
-  justify-content: space-around;
-}
-#port-nav {
-  padding: 3em 0em;
-  display: flex;
+  justify-content:center;
 }
 #port-nav ul{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content:flex-start;
+  flex-wrap: wrap;
+  justify-content:center;
   list-style: none;
+  
+}
+#port-nav ul li {
+  margin: 1em;
+  text-align: center;
 }
 #port-nav ul li a {
   padding: 1em ;
   border-bottom: solid var(--heading-color);
   text-decoration: none;
   color: var(--secondary-bg-color);
+  font-size: 16px;
 }
 #port-nav ul li a:focus {
   border-bottom: solid var(--accent-bg-color);
@@ -260,9 +293,37 @@
 #port-nav ul li a:hover {
   color: var(--accent-bg-color);
 }
+#port-nav ul li a:default {
+  color: var(--accent-bg-color);
+}
+/* COLLAGE SECTION - START */
+.collage-card {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: .5em;
+  align-items: center;
+  align-content: center;
+}
+.collage-img {
+  box-sizing: border-box;
+}
+/* GALLERY SECTION - START */
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+  gap: 2em;
+  padding: 0em 0 5em 0;
+}
 @media screen and (min-width:987px) {
   #intro-container {
-    width: 60%;
+    width: 70%;
   }
   #aside {
     position: fixed;
@@ -270,6 +331,7 @@
     flex-direction: column;
     height: 100%;
     max-width: 210px;
+    min-width: 210px;
     text-align: center;
     background-color: var(--secondary-bg-color);
   }
@@ -278,10 +340,26 @@
   }
 }
 @media screen and (min-width:768px) {
+  #port-nav ul li a {
+    font-size: 16px;
+  }
+  #port-nav ul {
+    flex-direction: row;
+  }
+  #port-nav ul li {
+    margin: 0;
+  }
+  #gallery {
+    justify-content: flex-start;
+    padding-left: 5em;
+  }
   .card-container-2::before {
     content: "-";
     position: relative;
     left: 0;
+  }
+  #intro {
+    height: 100vh;
   }
   #intro-container {
     width: 60%;
@@ -295,4 +373,12 @@
     flex-wrap: wrap;
     gap: 2em;
   }
+  #main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1em;
+    
+  }
+  
 }

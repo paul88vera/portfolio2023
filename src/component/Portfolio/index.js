@@ -1,20 +1,36 @@
-export default function Portfolio() {
+import { Link } from 'react-router-dom';
+import PortHeader from '../PortHeader';
+
+import All from '../All';
+import React from '../React';
+import Backend from '../Backend';
+import Python from '../Python';
+import WordPress from '../WordPress';
+
+const Portfolio = () => {
+
   return (
     <section id="portfolio">
-      <div id="port-header">
-        <div>
-      <h1>My Portfolio</h1>
-      <h3>Current Works</h3>
-        </div>
-      <div id="port-nav">
+      <nav id='port-nav'>
+      <PortHeader />
         <ul>
-          <li><a href="#fd">All</a></li>
-          <li><a href="#fd">React</a></li>
-          <li><a href="#fd">HTML</a></li>
-          <li><a href="#fd">WordPress</a></li>
+          <li><Link to="/">All</Link></li>
+          <li><Link to="/React">React</Link></li>
+          <li><Link to="/Python">Python</Link></li>
+          <li><Link to="/Backend">Backend</Link></li>
+          <li><Link to="/WordPress">WordPress</Link></li>
         </ul>
-      </div>
+      </nav>
+      <br/>
+      <div id='gallery'>
+        <All />
+        <React />
+        <Backend />
+        <Python />
+        <WordPress />
       </div>
     </section>
   )
 }
+
+export default Portfolio;

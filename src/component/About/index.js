@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about">
        <div className="img-cont">
-        <img src="http://unsplash.it/400" alt="" />
+        <img src="http://unsplash.it/300" alt="" />
         </div>
         <div id="about-para">
 

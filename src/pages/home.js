@@ -3,9 +3,8 @@ import Nav from "../component/Nav";
 import Landing from "../component/Landing";
 import About from "../component/About";
 import Experience from "../component/Experience";
-import Portfolio from "../component/Portfolio";
 
-export default function Home() {
+const Home = () => {
   return (
     <div id="home">
       <Aside />
@@ -13,7 +12,9 @@ export default function Home() {
       <Landing />
       <About />
       <Experience />
-      <Portfolio />
     </div>
+
   );
 }
+
+export default Home;

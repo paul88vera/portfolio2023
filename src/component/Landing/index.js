@@ -11,7 +11,7 @@ export default function Landing() {
             This is my short bio that will just be here for reference to see the
             size of an actual paragraph.
           </p>
-          <button className="btn ">Experience & Certifications</button>
+          <a href="#portfolio" className="btn">Experience & Certifications</a>
         </div>
       </section>
     </div>
