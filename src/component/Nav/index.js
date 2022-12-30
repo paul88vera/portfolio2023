@@ -11,7 +11,7 @@ export default function Nav() {
               <a href="#home">paul88vera@gmail.com</a>
             </li>
             <li>
-              <a href="#home">Hi</a>
+              <a href="mailto:paul88vera@gmail.com" className="email-box"><i></i></a>
             </li>
           </ul>
         </nav>
