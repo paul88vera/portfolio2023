@@ -4,14 +4,14 @@ export default function Nav() {
         <nav id="main-nav">
           <ul>
             <li>
-              {/* //TODO:  change the links later */}
-              <a href="#home">+1-210-501-9271</a>
+              <a href="tel:+1-210-501-9271">+1-210-501-9271</a>
             </li>
             <li>
-              <a href="#home">paul88vera@gmail.com</a>
+              <a href="mailto:paul88vera@gmail.com">paul88vera@gmail.com</a>
             </li>
             <li>
-              <a href="mailto:paul88vera@gmail.com" className="email-box"><i></i></a>
+              <a href="mailto:paul88vera@gmail.com" className="email-box"><img src="/assets/img/email_icon.png" width="50"
+              alt="email" /></a>
             </li>
           </ul>
         </nav>

@@ -55,12 +55,19 @@ body {
   font-size: 18px;
   padding: .3em;
 }
-.aside-nav ul li a::before {
-  content: "...";
+.home-anchor::before, .about-anchor::before, .portfolio-anchor::before {
   padding-left: .3em;
   padding-right: 1em;
 }
-
+.home-anchor::before {
+  content: "🏠";
+}
+.about-anchor::before {
+  content: "❓";
+}
+.portfolio-anchor::before {
+  content: "💻";
+}
 .aside-nav ul li a:hover {
   color: var(--accent-bg-color);
 }
@@ -103,8 +110,11 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+#main-nav ul li a:hover {
+  color: var(--accent-bg-color);
+}
 .email-box {
-  padding: 2em;
+  padding: 1em;
   background-color: var(--accent-bg-color);
 }
 /** INTRO SECTION - START */
@@ -115,7 +125,11 @@ body {
   padding: 3em 0;
   color: #fff;
   font-size: 18px;
-  background-color: var(--main-bg-color);
+  background-color: rgb(133, 133, 133);
+  background-blend-mode: overlay;
+  background-image: url(/public/assets/img/landing-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #intro-container {
   display: flex;
@@ -235,7 +249,7 @@ body {
   align-items: flex-start;
 }
 .card-box::before {
-  content: "...";
+  content: "📝";
   position: absolute;
   left: 20px;
   color: var(--accent-bg-color);
