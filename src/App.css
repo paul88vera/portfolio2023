@@ -3,10 +3,10 @@
 :root {
   --main-bg-color: #242424;
   --secondary-bg-color: #1c1d1d;
-  --tri-bg-color:rgb(249, 249, 249);
+  --tri-bg-color:#f7f7f7;
   --accent-bg-color: #198f91;
   --heading-color: rgb(221, 221, 221);
-
+  
 }
 * {
   margin: 0;
@@ -208,6 +208,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
+  position: relative;
 }
 #experience-div {
   display: flex;
@@ -243,14 +244,16 @@ body {
   min-width: 300px;
   max-width: 600px;
   text-align: left;
+  border: none;
 }
 .card-box {
   padding-left: 1em;
   align-items: flex-start;
 }
-.card-box::before {
-  content: "📝";
+.fa-ghost::before {
+  content: "\f6e2";
   position: absolute;
+  height: 20px;
   left: 20px;
   color: var(--accent-bg-color);
   font-weight: 600;
@@ -260,10 +263,30 @@ body {
   font-weight: 600;
 }
 .card-subtext {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
 }
 .card-para {
   font-size: 14px;
+}
+.card a {
+  color: var(--accent-bg-color);
+}
+#division1 {
+  height: 45%;
+  background-color: var(--heading-color);
+  position: absolute;
+  width: 5px;
+  left: 200px;
+  top: 250px;
+}
+#division2 {
+  height: 25%;
+  background-color: var(--heading-color);
+  position: absolute;
+  width: 5px;
+  right: 200px;
+  top: 1850px;
 }
 /** PORTFOLIO SECTION - START */
 #portfolio {
@@ -295,7 +318,7 @@ body {
   flex-wrap: wrap;
   justify-content:center;
   list-style: none;
-  
+
 }
 #port-nav ul li {
   margin: 1em;
@@ -343,6 +366,18 @@ body {
   gap: 2em;
   padding: 0em 0 5em 0;
 }
+      /* ------------- 
+        MEDIA QUERIES
+      --------------- */
+@media screen and (min-width:1205px) {
+    #division1 {
+    height: 70%;
+  }
+  #division2 {
+    top: 450px;
+    height: 45%;
+  }
+}
 @media screen and (min-width:987px) {
   #intro-container {
     width: 70%;
@@ -379,6 +414,9 @@ body {
     content: "-";
     position: relative;
     left: 0;
+  }
+  .card {
+    width: 450px;
   }
   #intro {
     height: 100vh;
