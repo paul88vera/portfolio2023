@@ -1,5 +1,3 @@
-// import '@fortawesome/fontawesome-svg-core/styles.css'
-
 export default function Experience() {
   return (
     <section id="experience">
@@ -9,7 +7,7 @@ export default function Experience() {
         <div className="card-container-1">
         <div id='division1'></div>
         <div className="card">
-        <i class="fa-solid fa-ghost"></i>
+        <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
             <h2 className="card-title">Full Stack Web Developer</h2>
             <h4 className="card-subtext">Community Bible Church (Jun 2022 - Present)</h4>
@@ -17,7 +15,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="card">
-            <i class="fa-solid fa-ghost"></i>
+            <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
             <h2 className="card-title">Full Stack Web Developer & Junior IT Technician</h2>
             <h4 className="card-subtext">Freelance (2017 - Present)</h4>
@@ -25,7 +23,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="card">
-          <i class="fa-solid fa-ghost"></i>
+          <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
             <h2 className="card-title">Cybersecurity & Web Design Teacher</h2>
             <h4 className="card-subtext">Southwest ISD (Aug 2021 - Aug 2022)</h4>
