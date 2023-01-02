@@ -59,15 +59,6 @@ body {
   padding-left: .3em;
   padding-right: 1em;
 }
-.home-anchor::before {
-  content: "🏠";
-}
-.about-anchor::before {
-  content: "❓";
-}
-.portfolio-anchor::before {
-  content: "💻";
-}
 .aside-nav ul li a:hover {
   color: var(--accent-bg-color);
 }
@@ -78,45 +69,37 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
-/** MAIN SECTION - START */
-#main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: var(--main-bg-color);
+.fa-address-card, .fa-house, .fa-briefcase {
+  font-size: 14px;
+  margin-right: 15px;
 }
+/** MAIN-NAV SECTION - START */
 #main-nav {
-  background-color: transparent;
-  position: absolute;
   display: none;
 }
-#main-nav ul {
+#main-nav a {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  align-content: flex-end;
-  flex-wrap: wrap;
-  list-style: none;
-  width: 1200px;
-  gap: 1em;
-}
-#main-nav ul li {
-  display: flex;
-  justify-content: space-evenly;
-}
-#main-nav ul li a {
+  justify-content: flex-end;
   color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 600; 
+  width: 33%;
 }
-#main-nav ul li a:hover {
+#main-nav a:hover {
   color: var(--accent-bg-color);
 }
-.email-box {
-  padding: 1em;
+.fa-envelope {
+  padding: .5em;
   background-color: var(--accent-bg-color);
+  font-size: 34px;
+  margin-right: 0;
+  color: var(--tri-bg-color);
 }
+/* .email-box:hover {
+  color: #ffffff;
+} */
 /** INTRO SECTION - START */
 #intro {
   display: flex;
@@ -194,11 +177,10 @@ body {
   gap: 1em;
   font-weight: 600;
 }
-#social-cont ul li::before {
-  content: "+";
-  padding-right: .5em;
+.fa-plus {
+  font-size: 20px;
   color: var(--accent-bg-color);
-  font-weight: 600;
+  margin-right: 10px;
 }
 /** EXPERIENCE SECTION - START */
 #experience {
@@ -238,7 +220,7 @@ body {
 }
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   padding: 2em;
   min-width: 300px;
@@ -246,17 +228,15 @@ body {
   text-align: left;
   border: none;
 }
+.fa-ghost, .fa-user-graduate, .fa-scroll {
+  color: var(--accent-bg-color);
+  position: relative;
+  top: 5px;
+  font-size: 25px;
+}
 .card-box {
   padding-left: 1em;
   align-items: flex-start;
-}
-.fa-ghost::before {
-  content: "\f6e2";
-  position: absolute;
-  height: 20px;
-  left: 20px;
-  color: var(--accent-bg-color);
-  font-weight: 600;
 }
 .card-title {
   font-size: 22px;
@@ -370,7 +350,7 @@ body {
         MEDIA QUERIES
       --------------- */
 @media screen and (min-width:1205px) {
-    #division1 {
+  #division1 {
     height: 70%;
   }
   #division2 {
@@ -392,7 +372,7 @@ body {
     text-align: center;
     background-color: var(--secondary-bg-color);
   }
-  #main, #intro, #about, #experience, #portfolio {
+  #main-nav, #intro, #about, #experience, #portfolio {
     margin-left: 210px;
   }
 }
@@ -434,8 +414,12 @@ body {
     gap: 2em;
   }
   #main-nav {
+    padding: 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: var(--secondary-bg-color);
   }
 }

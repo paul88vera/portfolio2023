@@ -6,9 +6,9 @@ export default function Aside() {
         <br/>
         <div class="aside-nav">
           <ul>
-          <li><a href="#home" className="home-anchor">Home</a></li>
-          <li><a href="#about" className="about-anchor">About</a></li>
-          <li><a href="#portfolio" className="portfolio-anchor">Portfolio</a></li>
+          <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-address-card"></i>About</a></li>
+          <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
           </ul>
         </div>
       </aside>
