@@ -31,12 +31,12 @@ export default function About() {
         </p>
         <div id="social-cont">
         <ul>
-          <li><i class="fa-solid fa-plus"></i>Paul Vera</li>
-          <li><i class="fa-solid fa-plus"></i>paul88vera@gmail.com</li>
-          <li><i class="fa-solid fa-plus"></i>github.com/paul88vera</li>
-          <li><i class="fa-solid fa-plus"></i>Texas, USA</li>
-          <li><i class="fa-solid fa-plus"></i>Feb 24th, 1988</li>
-          <li><i class="fa-solid fa-plus"></i>210-501-9271</li>
+          <li><i className="fa-solid fa-plus"></i>Paul Vera</li>
+          <li><i className="fa-solid fa-plus"></i>paul88vera@gmail.com</li>
+          <li><i className="fa-solid fa-plus"></i>github.com/paul88vera</li>
+          <li><i className="fa-solid fa-plus"></i>Texas, USA</li>
+          <li><i className="fa-solid fa-plus"></i>Feb 24th, 1988</li>
+          <li><i className="fa-solid fa-plus"></i>210-501-9271</li>
         </ul>
         </div>
         </div>

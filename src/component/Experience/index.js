@@ -33,7 +33,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="card">
-          <i class="fa-solid fa-ghost"></i>
+          <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
             <h2 className="card-title">Web Developer & Graphic Designer</h2>
             <h4 className="card-subtext">Codeup, LLC (2020 - Aug 2020)</h4>
@@ -41,7 +41,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="card">
-          <i class="fa-solid fa-ghost"></i>
+          <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
             <h2 className="card-title">Web Design & Animation Teacher</h2>
             <h4 className="card-subtext">New Braunfels ISD (Aug 2017 - Aug 2021)</h4>
@@ -49,7 +49,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="card">
-            <i class="fa-solid fa-ghost"></i>
+            <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
             <h2 className="card-title">U.S. Army Military Police 31B</h2>
             <h4 className="card-subtext">United States Army (2009 - 2014)</h4>
@@ -60,7 +60,7 @@ export default function Experience() {
         <div className="card-container-2">
         <div id='division2'></div>
           <div className="card">
-          <i class="fa-solid fa-user-graduate"></i>
+          <i className="fa-solid fa-user-graduate"></i>
             <div className="card-box">
             <h2 className="card-title">Full Stack Coding Bootcamp</h2>
             <h4 className="card-subtext">University of Texas at Austin (Oct 2021 - Apr 2022)</h4>
@@ -68,7 +68,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="card">
-          <i class="fa-solid fa-user-graduate"></i>
+          <i className="fa-solid fa-user-graduate"></i>
             <div className="card-box">
             <h2 className="card-title">Bachelor's in Fine Arts</h2>
             <h4 className="card-subtext">The Art Institute of San Antonio (2014 - 2017)</h4>
@@ -76,7 +76,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="card">
-          <i class="fa-solid fa-scroll"></i>
+          <i className="fa-solid fa-scroll"></i>
             <div className="card-box">
             <h2 className="card-title">CompTIA IT Fundamentals (ITF+)</h2>
             <h4 className="card-subtext">Credential ID: COMP001022059238</h4>
@@ -84,7 +84,7 @@ export default function Experience() {
             </div>
           </div>
           <div className="card">
-          <i class="fa-solid fa-scroll"></i>
+          <i className="fa-solid fa-scroll"></i>
             <div className="card-box">
             <h2 className="card-title">EC-12 242 Technology Applications</h2>
             <h4 className="card-subtext">Texas Education Agency (Search: Paul Michael Vera)</h4>

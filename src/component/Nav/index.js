@@ -6,7 +6,7 @@ export default function Nav() {
         <a href="mailto:paul88vera@gmail.com">paul88vera@gmail.com</a>
 
         <a href="mailto:paul88vera@gmail.com" className="email-box">
-          <i class="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope"></i>
         </a>
       </nav>
   );

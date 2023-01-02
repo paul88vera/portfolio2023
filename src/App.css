@@ -304,21 +304,22 @@ body {
   margin: 1em;
   text-align: center;
 }
-#port-nav ul li a {
+button {
+ border: none;
+}
+#port-nav ul li button {
   padding: 1em ;
   border-bottom: solid var(--heading-color);
   text-decoration: none;
   color: var(--secondary-bg-color);
   font-size: 16px;
+  background-color: transparent;
 }
-#port-nav ul li a:focus {
+#port-nav ul li button:focus {
   border-bottom: solid var(--accent-bg-color);
   color: var(--accent-bg-color);
 }
-#port-nav ul li a:hover {
-  color: var(--accent-bg-color);
-}
-#port-nav ul li a:default {
+#port-nav ul li button:hover {
   color: var(--accent-bg-color);
 }
 /* COLLAGE SECTION - START */
