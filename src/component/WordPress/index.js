@@ -1,8 +1,12 @@
+import Christmas from '../../img/cbcChristmas.png';
+import Leads from '../../img/cbcLeadsTV.png';
+import Students from '../../img/cbcStudents.png';
+
 export default function WordPress() {
   return (
     <section id="WordPress">
       <div className="collage-card">
-        <img src="https://unsplash.it/300/400" alt="" />
+        <img src={Christmas} alt="CBC Christmas" width="300" />
         <div className="invisible">
           <a href="https://www.cbcchristmas.com/">CBC Christmas</a>
           <p>WordPress</p>
@@ -10,7 +14,7 @@ export default function WordPress() {
       </div>
 
       <div className="collage-card">
-        <img src="https://unsplash.it/300/400" alt="" />
+        <img src={Leads} alt="CBC LeadsTV" width="300" />
         <div className="invisible">
           <a href="https://www.communitybible.com/leadstv-test123455/">
             CBC LeadTV
@@ -20,10 +24,10 @@ export default function WordPress() {
       </div>
 
       <div className="collage-card">
-        <img src="https://unsplash.it/300/400" alt="" />
+        <img src={Students} alt="Students page" width="300" />
         <div className="invisible">
           <a href="https://www.communitybible.com/leadstv-test123455/">
-            CBC LeadTV
+            CBC Students Page
           </a>
           <p>WordPress</p>
         </div>

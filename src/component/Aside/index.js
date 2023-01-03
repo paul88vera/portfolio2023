@@ -1,7 +1,9 @@
+import Me from '../../img/PaulVeraCropped.png'
+
 export default function Aside() {
   return (
     <aside id="aside">
-        <img src="http://unsplash.it/200" alt="Paul Vera" />
+        <img src={Me} alt="Paul Vera" />
         <h2>Paul Vera</h2>
         <br/>
         <div className="aside-nav">
