@@ -7,7 +7,6 @@ import All from "../All";
     <section id="portfolio">
       <nav id="port-nav">
         <PortHeader />
-        
       </nav>
       <div id="gallery">
         <All />

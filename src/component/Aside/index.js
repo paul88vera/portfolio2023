@@ -1,9 +1,9 @@
-import Me from '../../img/PaulVeraCropped.png'
+import Images from '../../constants/images';
 
 export default function Aside() {
   return (
     <aside id="aside">
-        <img src={Me} alt="Paul Vera" />
+        <img src={Images.Me} alt="Paul Vera" />
         <h2>Paul Vera</h2>
         <br/>
         <div className="aside-nav">

@@ -361,7 +361,8 @@ button {
   max-height: 400px;
 }
 .collage-card img:hover {
-  background-color: var(--main-bg-color);
+  background: var(--secondary-bg-color);
+  background-blend-mode: overlay;
   cursor: pointer;
 }
 .appear {
@@ -371,8 +372,14 @@ button {
   align-items: center;
   align-content: center;
   justify-content: center;
+  text-align: center;
   gap: 0.5em;
-  height: fit-content;
+  height: 40%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.766);
+  backdrop-filter: blur(8px);
 }
 .appear a {
   color: var(--tri-bg-color);
@@ -381,9 +388,14 @@ button {
   font-size: 24px;
   max-width: 270px;
   padding: 0.5em 1em 0.5em 1em;
+  line-height: 24px;
 }
 .appear a:hover {
   color: var(--accent-bg-color);
+}
+.appear p {
+  color: var(--tri-bg-color);
+  font-size: 18px;
 }
 .invisible {
   display: none;
@@ -409,6 +421,9 @@ button {
     top: 450px;
     height: 45%;
   }
+  .appear {
+    width: 10%;
+  }
 }
 @media screen and (min-width: 987px) {
   #intro-container {
@@ -431,17 +446,19 @@ button {
   #portfolio {
     margin-left: 210px;
   }
+  .appear {
+    width: 10%;
+  }
 }
 @media screen and (min-width: 768px) {
-  #React,
-  #Backend,
-  #WordPress {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .appear {
+    width: 30%;
   }
   #All {
     justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
   }
   #port-nav ul li a {
     font-size: 16px;
