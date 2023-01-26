@@ -92,7 +92,7 @@ const All = () => {
         }}>
         <img className="collage-img" src={Images.Circulize} alt="Circulize - Restaurant Finder" width="300" />
         {showInfo6 && <div className="appear">
-          <a href="https://main.d3fnfglqayocb3.amplifyapp.com/">Circulize</a>
+          <a href="http://circulate.com.s3-website-us-east-1.amazonaws.com">Circulize</a>
           <a href="https://www.github.com/paul88vera/restaurant-finder">Repository</a>
           <p>React | CSS | JS</p>
           </div>}
