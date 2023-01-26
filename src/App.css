@@ -358,7 +358,7 @@ button {
 .collage-img {
   box-sizing: border-box;
   max-width: 300px;
-  max-height: 400px;
+  max-height: auto;
 }
 .collage-card img:hover {
   background: var(--secondary-bg-color);
@@ -374,8 +374,8 @@ button {
   justify-content: center;
   text-align: center;
   gap: 0.5em;
-  height: 40%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
   box-sizing: border-box;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.766);
@@ -447,12 +447,12 @@ button {
     margin-left: 210px;
   }
   .appear {
-    width: 10%;
+    width: 20%;
   }
 }
 @media screen and (min-width: 768px) {
   .appear {
-    width: 30%;
+    width: 20%;
   }
   #All {
     justify-content: flex-start;

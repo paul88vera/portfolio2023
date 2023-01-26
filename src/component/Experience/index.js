@@ -11,7 +11,7 @@ export default function Experience() {
             <div className="card-box">
             <h2 className="card-title">Full Stack Web Developer</h2>
             <h4 className="card-subtext">Community Bible Church (Jun 2022 - Present)</h4>
-            <p className="card-para">Skills: </p>
+            <p className="card-para">Skills: Website & Domain Management, AWS Administrator, UX/UI Designer, HTML, CSS, JS, REACT, PHP Developer</p>
             </div>
           </div>
           <div className="card">
@@ -19,7 +19,7 @@ export default function Experience() {
             <div className="card-box">
             <h2 className="card-title">Full Stack Web Developer & Junior IT Technician</h2>
             <h4 className="card-subtext">Freelance (2017 - Present)</h4>
-            <p className="card-para">Skills: </p>
+            <p className="card-para">Skills: Data Recovery, Network Setup & Configuration, PC Maintenance, Website Management & Development, HTML, REACT, CSS, BOOTSTRAP, JS, JSX, Python</p>
             </div>
           </div>
           <div className="card">
@@ -27,7 +27,7 @@ export default function Experience() {
             <div className="card-box">
             <h2 className="card-title">Cybersecurity & Web Design Teacher</h2>
             <h4 className="card-subtext">Southwest ISD (Aug 2021 - Aug 2022)</h4>
-            <p className="card-para">Skills:</p>
+            <p className="card-para">Skills: Developed CompTIA ITF & CompTIA A+ Aligned Trainings for Secondary Students, CyberPatriot Sponsor, Taught Amazon ProjectSTEM Python Curriculum </p>
             </div>
           </div>
           <div className="card">
@@ -35,7 +35,7 @@ export default function Experience() {
             <div className="card-box">
             <h2 className="card-title">Web Developer & Graphic Designer</h2>
             <h4 className="card-subtext">Codeup, LLC (2020 - Aug 2020)</h4>
-            <p className="card-para">Skills: </p>
+            <p className="card-para">Skills: Website Management & Maintainance, Designed Graphics for Web & Social Media, Designed Billboards & Merchandise</p>
             </div>
           </div>
           <div className="card">
@@ -43,7 +43,7 @@ export default function Experience() {
             <div className="card-box">
             <h2 className="card-title">Web Design & Animation Teacher</h2>
             <h4 className="card-subtext">New Braunfels ISD (Aug 2017 - Aug 2021)</h4>
-            <p className="card-para">Skills: </p>
+            <p className="card-para">Skills: Developed Web Design Curriculum, Developed Animation I - Practicum of Animation Curriculum, Business Professional of America Lead Advisor for District, Managed & Maintained A Computer Lab, HTML, CSS, JS, BOOTSTRAP</p>
             </div>
           </div>
           <div className="card">
@@ -51,7 +51,7 @@ export default function Experience() {
             <div className="card-box">
             <h2 className="card-title">U.S. Army Military Police 31B</h2>
             <h4 className="card-subtext">United States Army (2009 - 2014)</h4>
-            <p className="card-para">Skills: </p>
+            <p className="card-para">Skills: Communicated with A Diverse Populus, Defended Federal & State Laws, Prepared Written & Oral Reports, Obtained A Warrior Leader Course Certificate, Secured & Upheld A Secret Clearance</p>
             </div>
           </div>
         </div>
