@@ -19,7 +19,7 @@ export default function Experience() {
             <div className="card-box">
             <h2 className="card-title">Full Stack Web Developer & Junior IT Technician</h2>
             <h4 className="card-subtext">Freelance (2017 - Present)</h4>
-            <p className="card-para">Skills: Data Recovery, Network Setup & Configuration, PC Maintenance, Website Management & Development, HTML, REACT, CSS, BOOTSTRAP, JS, JSX, Python</p>
+            <p className="card-para">Skills: Data Recovery, Network Setup & Configuration, PC Maintenance, Website Management & Development, HTML, CSS, BOOTSTRAP, JS, REACT, Python</p>
             </div>
           </div>
           <div className="card">
@@ -34,7 +34,7 @@ export default function Experience() {
           <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
             <h2 className="card-title">Web Developer & Graphic Designer</h2>
-            <h4 className="card-subtext">Codeup, LLC (2020 - Aug 2020)</h4>
+            <h4 className="card-subtext">Codeup, LLC (Mar 2020 - Aug 2020)</h4>
             <p className="card-para">Skills: Website Management & Maintainance, Designed Graphics for Web & Social Media, Designed Billboards & Merchandise</p>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function Experience() {
             <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
             <h2 className="card-title">U.S. Army Military Police 31B</h2>
-            <h4 className="card-subtext">United States Army (2009 - 2014)</h4>
+            <h4 className="card-subtext">United States Army (Feb 2009 - Feb 2014)</h4>
             <p className="card-para">Skills: Communicated with A Diverse Populus, Defended Federal & State Laws, Prepared Written & Oral Reports, Obtained A Warrior Leader Course Certificate, Secured & Upheld A Secret Clearance</p>
             </div>
           </div>

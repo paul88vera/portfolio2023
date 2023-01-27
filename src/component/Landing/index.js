@@ -11,7 +11,7 @@ export default function Landing() {
           </h1>
           <h3>Full Stack Developer</h3>
           <p>
-            I am a forever learner. I am a dreamer. I am an optimist. I enjoy cybersecurity. I am a developer.
+            I am a forever learner. I am a dreamer. I am an optimist. I am a developer.
           </p>
           <a href="#portfolio" className="btn">Experience & Certifications</a>
         </div>
