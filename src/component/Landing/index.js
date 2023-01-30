@@ -13,7 +13,7 @@ export default function Landing() {
           <p>
             I am a forever learner. I am a dreamer. I am an optimist. I am a developer.
           </p>
-          <a href="#portfolio" className="btn">Experience & Certifications</a>
+          <a href="#portfolio" className="btn-two">Experience & Certifications</a>
         </div>
       </section>
     </div>

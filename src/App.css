@@ -28,7 +28,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-bg-color);
 }
-/** ASIDE SECTION - START */
+/*-------------------------------
+// ASIDE SECTION - START 
+-------------------------------*/
 #aside {
   display: none;
   font-size: 18px;
@@ -82,7 +84,9 @@ body {
 #aside img {
   width: 210px;
 }
-/** MAIN-NAV SECTION - START */
+/*------------------------------
+// MAIN-NAV SECTION - START 
+--------------------------------*/
 #main-nav {
   display: none;
 }
@@ -106,10 +110,9 @@ body {
   margin-right: 0;
   color: var(--tri-bg-color);
 }
-/* .email-box:hover {
-  color: #ffffff;
-} */
-/** INTRO SECTION - START */
+/*------------------------
+// INTRO SECTION - START 
+--------------------------*/
 #intro {
   display: flex;
   align-content: center;
@@ -137,19 +140,20 @@ body {
   color: var(--accent-bg-color);
 }
 
-.btn {
+.btn-two {
   background-color: var(--accent-bg-color);
   color: #fff;
   padding: 0.8em 1em;
   max-width: 300px;
-  color: #fff;
   text-decoration: none;
 }
-.btn:hover {
+.btn-two:hover {
   scale: 102%;
-  background-color: var(--accent-bg-color);
+  color: var(--tri-bg-color);
 }
-/** ABOUT ME SECTION - START */
+/*------------------------------
+// ABOUT ME SECTION - START 
+-------------------------------*/
 #about {
   display: flex;
   flex-direction: row;
@@ -195,7 +199,9 @@ body {
   color: var(--accent-bg-color);
   margin-right: 10px;
 }
-/** EXPERIENCE SECTION - START */
+/*-------------------------------
+// EXPERIENCE SECTION - START 
+---------------------------------*/
 #experience {
   padding: 4em 0em;
   background-color: var(--tri-bg-color);
@@ -271,7 +277,7 @@ body {
   color: var(--accent-bg-color);
 }
 #division1 {
-  height: 45%;
+  height: 50%;
   background-color: var(--heading-color);
   position: absolute;
   width: 5px;
@@ -284,9 +290,11 @@ body {
   position: absolute;
   width: 5px;
   right: 200px;
-  top: 1850px;
+  top: 2000px;
 }
-/** PORTFOLIO SECTION - START */
+/*-----------------------------
+// PORTFOLIO SECTION - START 
+------------------------------*/
 #portfolio {
   background-color: var(--tri-bg-color);
   display: flex;
@@ -339,7 +347,9 @@ button {
 #port-nav ul li button:hover {
   color: var(--accent-bg-color);
 }
-/* COLLAGE SECTION - START */
+/*------------------------
+// COLLAGE SECTION - START 
+-------------------------*/
 #All {
   display: flex;
   flex-direction: column;
@@ -401,7 +411,9 @@ button {
 .invisible {
   display: none;
 }
-/* GALLERY SECTION - START */
+/*---------------------------
+// GALLERY SECTION - START 
+-------------------------------*/
 #gallery {
   display: flex;
   flex-direction: row;
@@ -411,12 +423,157 @@ button {
   align-content: center;
   padding: 0em 0 5em 0;
 }
-/* ------------- 
+/*------------------------------
+// BURGER NAV
+--------------------------------*/
+.topnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+.topnav a {
+  background-color: var(--accent-bg-color);
+  color: var(--accent-bg-color);
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+}
+.bars:hover {
+  color: var(--accent-bg-color);
+}
+#myLinks a {
+  color: var(--tri-bg-color);
+  text-decoration: none;
+  background-color: transparent;
+  border-bottom: solid 3px transparent;
+  padding: 1em;
+  position: relative;
+}
+#myLinks a:hover {
+  border-bottom: solid 3px var(--tri-bg-color);
+  animation: slideIn 300ms ease-in-out;
+}
+#myLinks a:active {
+  color: var(--accent-bg-color);
+  border-bottom: solid 3px var(--accent-bg-color);
+}
+#myLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2em;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  z-index: 998;
+  overflow: hidden;
+}
+.btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  animation: fadeIn 500ms ease-in-out;
+}
+.exe {
+  color: var(--accent-bg-color);
+  z-index: 9999;
+  display: none;
+}
+.exe:hover {
+  color: var(--accent-bg-color);
+}
+.bars {
+  color: var(--accent-bg-color);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    border-bottom: solid 3px var(--tri-bg-color);
+  }
+  50% {
+    border-bottom: solid 3px var(--accent-bg-color);
+  }
+  100% {
+    border-bottom: solid 3px var(--tri-bg-color);
+  }
+}
+/*------------------------
+// UP ARROW
+-------------------------*/
+#arrow-container {
+  position: fixed;
+  top: 80%;
+  right: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
+  z-index: 99;
+  background-color: var(--accent-bg-color);
+  opacity: .7;
+  text-decoration: none;
+  cursor: pointer;
+}
+.arrow-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+}
+.slant {
+  background-color: var(--tri-bg-color);
+  width: 10px;
+  height: 3px;
+  border-radius: 30px;
+}
+.left-slant {
+  position: relative;
+  transform: rotate(45deg);
+  left: 8px;
+  top: 0px;
+}
+.right-slant {
+  position: relative;
+  transform: rotate(-45deg);
+  top: 0px;
+  right: 8px;
+}
+.arrow-link:hover {
+  animation: arrowBounce 700ms infinite ease-in-out;
+}
+/* arrow animation */
+@keyframes arrowBounce {
+  0% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+/* --------------------- 
         MEDIA QUERIES
-      --------------- */
+------------------------ */
 @media screen and (min-width: 1205px) {
   #division1 {
-    height: 70%;
+    height: 75%;
   }
   #division2 {
     top: 450px;
@@ -428,7 +585,7 @@ button {
 }
 @media screen and (min-width: 987px) {
   #intro-container {
-    width: 70%;
+    width: 60%;
   }
   #aside {
     position: fixed;
@@ -452,6 +609,9 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
+  .topnav {
+    display: none;
+  }
   .appear {
     width: 20%;
   }
@@ -486,7 +646,7 @@ button {
     height: 100vh;
   }
   #intro-container {
-    width: 60%;
+    width: 75%;
     padding: 0 6em;
   }
   #about {

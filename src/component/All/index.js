@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { useState } from "react";
 import Images from "../../constants/images";
 
@@ -7,7 +8,6 @@ const All = () => {
   const [showInfo3, setShowInfo3] = useState(false);
   const [showInfo4, setShowInfo4] = useState(false);
   const [showInfo5, setShowInfo5] = useState(false);
-  // const [showInfo6, setShowInfo6] = useState(false);
   const [showInfo7, setShowInfo7] = useState(false);
 
   return (
