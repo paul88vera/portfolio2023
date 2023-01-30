@@ -5,19 +5,28 @@ export default function Burger() {
   return (
     <div className="topnav" role="navigation">
 
-    <button className="btn bars" aria-expanded="false">
-      <i className="fa fa-bars" onMouseDown={() => {
-      setShowNav(true)
-    }}></i>
+    <button className="btn bars" aria-expanded="false" onClick={() => {
+      setShowNav(true);
+    }}>
+      <i className="fa fa-bars"></i>
     </button>
-{showNav && <div id="myLinks" aria-hidden="true" aria-labelledby="icon">
-    <button className="btn exe link" aria-expanded="true" onMouseDown={() => {
+
+  {showNav && 
+  <div id="myLinks" aria-hidden="true" aria-labelledby="icon">
+    <button className="btn exe link" aria-expanded="true" onClick={() => {
       setShowNav(false)
     }}>X</button>
-      <a href="#home" className="link">Home</a>
-      <a href="#giving" className="link">Giving</a>
-      <a href="#involved" className="link">Get Involved</a>
+      <a href="#home" className="link" onClick={() => {
+      setShowNav(false)
+    }}>Home</a>
+      <a href="#about" className="link" onClick={() => {
+      setShowNav(false)
+    }}>About</a>
+      <a href="#portfolio" className="link" onClick={() => {
+      setShowNav(false)
+    }}>Portfolio</a>
     </div>}
+
   </div>
   )
   

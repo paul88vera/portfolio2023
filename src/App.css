@@ -484,11 +484,12 @@ button {
   animation: fadeIn 500ms ease-in-out;
 }
 .exe {
+  background-color: var(--main-bg-color);
   color: var(--accent-bg-color);
   z-index: 9999;
-  display: none;
 }
 .exe:hover {
+  background-color: var(--main-bg-color);
   color: var(--accent-bg-color);
 }
 .bars {

@@ -83,20 +83,6 @@ const All = () => {
           </div>}
         </div>
 
-        {/* <div className="collage-card" onMouseEnter={() => {
-          setShowInfo6(true);
-        }}
-        onMouseLeave={() => {
-          setShowInfo6(false);
-        }}>
-        <img className="collage-img" src={Images.Circulize} alt="Circulize - Restaurant Finder" width="300" />
-        {showInfo6 && <div className="appear">
-          <a href="javascript:void(0)">Circulize (In Development)</a>
-          <a href="https://www.github.com/paul88vera/restaurant-finder" target="_blank">Repository</a>
-          <p>React | CSS | JS</p>
-          </div>}
-        </div> */}
-
         <div className="collage-card"
         onMouseEnter={() => {
           setShowInfo7(true);
