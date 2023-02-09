@@ -368,8 +368,11 @@ button {
 }
 .collage-img {
   box-sizing: border-box;
-  max-width: 300px;
-  max-height: auto;
+  max-width: 300px; 
+  max-height: 400px;
+  overflow: hidden;
+  object-fit: contain;
+
 }
 .collage-card img:hover {
   background: var(--secondary-bg-color);
@@ -580,9 +583,6 @@ button {
     top: 450px;
     height: 45%;
   }
-  .appear {
-    width: 10%;
-  }
 }
 @media screen and (min-width: 987px) {
   #intro-container {
@@ -606,7 +606,8 @@ button {
     margin-left: 210px;
   }
   .appear {
-    width: 20%;
+    /* width: 20%; */
+    max-width: 300px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -614,7 +615,8 @@ button {
     display: none;
   }
   .appear {
-    width: 20%;
+    /* width: 20%; */
+    max-width: 300px;
   }
   #All {
     justify-content: flex-start;
