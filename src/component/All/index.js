@@ -33,6 +33,9 @@ const All = () => {
             <a href="http://ministrytraining.institute/" target="_blank">
               CBC Ministry Training Institute
             </a>
+            <a href="https://www.github.com/paul88vera/CBCMTI" target="_blank">
+              Repository
+            </a>
             <p>REACT | CSS | WORDPRESS</p>
           </div>
         )}

@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import Christmas from "../img/cbcChristmas.png";
 import Leads from "../img/CBCLTV.png";
 import Students from "../img/cbcStudents.png";
@@ -6,7 +7,7 @@ import Days from "../img/21days.gif";
 import Champ from "../img/ChampionPlaza.jpg";
 import MTI from "../img/CBCMTI.jpg";
 import Circulize from "../img/Circulize.png";
-import Social from "../img/SocialAPI.png";
+import Social from "../img/socialAPI.png";
 import Me from "../img/PaulVeraCropped.png";
 
 export default {
