@@ -26,7 +26,7 @@ export default function Work() {
       name: "CBC Student Camp",
       img: Images.Students,
       repoLink: "https://github.com/paul88vera/student-camp",
-      webLink: "https://www.communitybible.com/students/",
+      webLink: "http://studentcamp.s3-website-us-east-1.amazonaws.com/",
       para: "REACT | JS | WordPress",
     },
     {
@@ -69,7 +69,7 @@ export default function Work() {
   return (
     <div className="collage-card">
       {works.map((works) => (
-        <div key={works.id} className="card-container">
+        <div key={works.id} data-id={works.id} className="card-container">
           <img
             className="collage-img"
             src={works.img}
@@ -77,7 +77,7 @@ export default function Work() {
             width="300"
           />
 
-          <div className="toggleAppearance">
+          <div className="toggleAppearance" data-id={works.id}>
             <a href={works.repoLink} target="_blank">
               Repository
             </a>
