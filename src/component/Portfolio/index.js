@@ -1,20 +1,19 @@
-import PortHeader from "../PortHeader";
-import All from "../All";
+import PortHeader from "../PortHeader"
+// import All from "../All"
+import Work from "../../props"
 
- const Portfolio = () => {
-
+const Portfolio = () => {
   return (
     <section id="portfolio">
       <nav id="port-nav">
         <PortHeader />
       </nav>
       <div id="gallery">
-        <All />
+        {/* <All /> */}
+        <Work />
       </div>
-
-
     </section>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio
