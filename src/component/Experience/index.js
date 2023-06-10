@@ -11,7 +11,7 @@ export default function Experience() {
             <div className="card-box">
               <h2 className="card-title">Front End Engineer</h2>
               <h4 className="card-subtext">
-                Transcendental (Jun 2023 - Present)
+                Transcendental (May 2023 - Present)
               </h4>
               <p className="card-para">
                 Skills: Website & Domain Management, Website Development,
@@ -25,7 +25,7 @@ export default function Experience() {
             <div className="card-box">
               <h2 className="card-title">Full Stack Web Developer</h2>
               <h4 className="card-subtext">
-                Community Bible Church (Jun 2022 - Jun 2023)
+                Community Bible Church (Jun 2022 - May 2023)
               </h4>
               <p className="card-para">
                 Skills: Website & Domain Management, AWS Administrator, UX/UI
