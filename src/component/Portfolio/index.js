@@ -1,6 +1,6 @@
 import PortHeader from "../PortHeader"
-// import All from "../All"
-import Work from "../../props"
+import All from "../All"
+// import Work from "../../props"
 
 const Portfolio = () => {
   return (
@@ -9,8 +9,8 @@ const Portfolio = () => {
         <PortHeader />
       </nav>
       <div id="gallery">
-        {/* <All /> */}
-        <Work />
+        <All />
+        {/* <Work /> */}
       </div>
     </section>
   )

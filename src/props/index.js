@@ -3,7 +3,7 @@ import { useState } from "react"
 import Images from "../constants/images"
 
 export default function Work() {
-  const [showInfo, setShowInfo] = useState(false)
+  const [isHidden, setIsHidden] = useState(true)
   const [works] = useState([
     {
       id: 0,
@@ -55,29 +55,30 @@ export default function Work() {
     },
   ])
 
-  const cardHidden = document.getElementsByClassName(".toggleAppearance")
-  function showText() {
-    if (cardHidden.style.display === "none") {
-      cardHidden.style.display = "flex"
-    } else {
-      cardHidden.style.display === "none"
-    }
-    console.log(cardHidden.style.display)
+  const hiddenCardStyle = {
+    position: "relative",
+    top: 0,
+    left: 0,
+    zIndex: 999,
+    visibility: isHidden ? "hidden" : "visible",
   }
-  addEventListener("click", showText())
+
+  const toggleCardAppearance = () => {
+    setIsHidden(!isHidden)
+  }
 
   return (
     <div className="collage-card">
       {works.map((works) => (
-        <div key={works.id} data-id={works.id} className="card-container">
+        <div key={works.id} className="card-container">
           <img
+            onClick={toggleCardAppearance}
             className="collage-img"
             src={works.img}
             alt={works.name}
             width="300"
           />
-
-          <div className="toggleAppearance" data-id={works.id}>
+          <div style={hiddenCardStyle} data-id={works.id}>
             <a href={works.repoLink} target="_blank">
               Repository
             </a>

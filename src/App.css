@@ -77,7 +77,8 @@ body {
 }
 .fa-address-card,
 .fa-house,
-.fa-briefcase {
+.fa-briefcase,
+.fa-graduation-cap {
   font-size: 14px;
   margin-right: 15px;
 }
@@ -123,6 +124,7 @@ body {
   background-color: rgb(133, 133, 133);
   background-blend-mode: overlay;
   background-image: url(/public/assets/img/landing-background.png);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -198,6 +200,13 @@ body {
   font-size: 20px;
   color: var(--accent-bg-color);
   margin-right: 10px;
+}
+#icon0,
+#icon1,
+#icon2,
+#icon3,
+#icon4 {
+  transition: transform 0.2s ease-in-out;
 }
 /*-------------------------------
 // EXPERIENCE SECTION - START 
@@ -367,6 +376,7 @@ button {
 .collage-card {
   height: auto;
   display: grid;
+  position: relative;
   grid-template-columns: 1fr;
   gap: 2em;
   flex-wrap: wrap;
@@ -376,22 +386,31 @@ button {
   align-content: center;
   margin: 1em;
   box-sizing: border-box;
+  z-index: 0;
 }
 .collage-img {
   box-sizing: border-box;
+  min-width: 300px;
   max-width: 300px;
   width: 100%;
   height: 100%;
   max-height: 400px;
   overflow: hidden;
-  object-fit: contain;
+  object-fit: cover;
+  border: #198f91 solid 2px;
+  border-radius: 5px;
+  scale: 100%;
+  transition: 0.2s ease-in-out;
+  z-index: 0;
 }
 .collage-card img:hover {
   background: var(--secondary-bg-color);
-  background-blend-mode: overlay;
   cursor: pointer;
+  scale: 110%;
+  transition: 0.2s ease-in-out;
+  z-index: 0;
 }
-.toggleAppearance {
+/* .toggleAppearance {
   display: none;
   position: relative;
   top: -400px;
@@ -414,15 +433,59 @@ button {
   font-weight: 900;
   font-size: 24px;
   max-width: 270px;
+  width: 100%;
   padding: 0.5em 1em 0.5em 1em;
   line-height: 24px;
 }
 .toggleAppearance p {
   color: var(--tri-bg-color);
   font-size: 18px;
-}
-.invisible {
+} */
+/* .invisible {
   display: none;
+} */
+.appear {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--tri-bg-color);
+  padding: 2rem 0;
+  gap: 2em;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  margin-bottom: 0px;
+  background-color: var(--secondary-bg-color);
+}
+.appear a {
+  color: #198f91;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.appear a:hover {
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.1em;
+  transition: 0.2s ease-in-out;
+}
+.fa-rectangle-xmark {
+  position: relative;
+  right: 0;
+  top: 0;
+  color: #ffffff;
+  font-size: 2em;
+  text-align: right;
+}
+.fa-rectangle-xmark:hover {
+  color: #198f91;
+}
+.fa-angle-down {
+  font-size: 2em;
+  color: var(--heading-color);
 }
 /*---------------------------
 // GALLERY SECTION - START 
@@ -595,9 +658,6 @@ button {
   }
 }
 @media screen and (min-width: 987px) {
-  .collage-card {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   #intro-container {
     width: 60%;
   }
@@ -623,9 +683,6 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
-  .collage-card {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   .topnav {
     display: none;
   }

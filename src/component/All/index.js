@@ -1,148 +1,101 @@
 /*eslint-disable*/
-import { useState } from "react";
-import Images from "../../constants/images";
+import { useState } from "react"
+import Images from "../../constants/images"
 
 const All = () => {
-  const [showInfo, setShowInfo] = useState(false);
-  const [showInfo1, setShowInfo1] = useState(false);
-  const [showInfo2, setShowInfo2] = useState(false);
-  const [showInfo3, setShowInfo3] = useState(false);
-  const [showInfo4, setShowInfo4] = useState(false);
+  const [showInfo, setShowInfo] = useState(false)
+  const [showInfo1, setShowInfo1] = useState(false)
+  const [showInfo2, setShowInfo2] = useState(false)
+
+  const collageImg = document.getElementsByClassName("collage-img")
+
+  const toggleAppearance = () => {
+    setShowInfo(!showInfo)
+    collageImg.style.display = "none"
+  }
+  const toggleAppearance1 = () => {
+    setShowInfo1(!showInfo1)
+  }
+  const toggleAppearance2 = () => {
+    setShowInfo2(!showInfo2)
+  }
 
   return (
     <section id="All">
-      <div
-        className="collage-card"
-        onMouseEnter={() => {
-          setShowInfo(true);
-        }}
-        onMouseLeave={() => {
-          setShowInfo(false);
-        }}
-      >
-        <img
-          className="collage-img"
-          src={Images.MTI}
-          alt="CBC Ministry Training Institute"
-          width="300"
-        />
-        {showInfo && (
-          <div className="appear">
-            <a href="http://ministrytraining.institute/" target="_blank">
-              CBC Ministry Training Institute
-            </a>
-            <a href="https://www.github.com/paul88vera/CBCMTI" target="_blank">
-              Repository
-            </a>
-            <p>REACT | CSS | WordPress</p>
-          </div>
-        )}
-      </div>
-
-      <div
-        className="collage-card"
-        onMouseEnter={() => {
-          setShowInfo1(true);
-        }}
-        onMouseLeave={() => {
-          setShowInfo1(false);
-        }}
-      >
-        <img
-          className="collage-img"
-          src={Images.Students}
-          alt="Students page"
-          width="300"
-        />
-        {showInfo1 && (
-          <div className="appear">
-            <a href="https://www.communitybible.com/students/" target="_blank">
-              CBC Students Page
-            </a>
-            <p>REACT | CSS | WordPress</p>
-          </div>
-        )}
-      </div>
-
-      <div
-        className="collage-card"
-        onMouseEnter={() => {
-          setShowInfo2(true);
-        }}
-        onMouseLeave={() => {
-          setShowInfo2(false);
-        }}
-      >
-        <img
-          className="collage-img"
-          src={Images.Comm}
-          alt="Community Group Resources page"
-          width="300"
-        />
-        {showInfo2 && (
-          <div className="appear">
-            <a
-              href="https://www.communitybible.com/community-group-resources/"
-              target="_blank"
-            >
-              CBC Community Group Resources
-            </a>
-            <p>REACT | CSS | WordPress</p>
-          </div>
-        )}
-      </div>
-
-      <div
-        className="collage-card"
-        onMouseEnter={() => {
-          setShowInfo3(true);
-        }}
-        onMouseLeave={() => {
-          setShowInfo3(false);
-        }}
-      >
+      <div className="collage-card" onClick={toggleAppearance}>
         <img
           className="collage-img"
           src={Images.Champ}
           alt="CBC Champion Plaza"
           width="300"
         />
-        {showInfo3 && (
+        {showInfo && (
           <div className="appear">
-            <a href="https://championplaza.com/" target="_blank">
+            <a
+              href="http://championplazatemp.s3-website-us-east-1.amazonaws.com/"
+              target="_blank">
               CBC Champion Plaza
             </a>
-            <p>HTML | CSS | JS</p>
+            <a
+              href="https://github.com/paul88vera/champion-plaza"
+              target="_blank">
+              Repository
+            </a>
+            <p>REACT | TAILWINDCSS | BLOGGER API</p>
+            <i class="fa-solid fa-angle-down" onClick={toggleAppearance}></i>
           </div>
         )}
       </div>
 
-      <div
-        className="collage-card"
-        onMouseEnter={() => {
-          setShowInfo4(true);
-        }}
-        onMouseLeave={() => {
-          setShowInfo4(false);
-        }}
-      >
+      <div className="collage-card" onClick={toggleAppearance1}>
         <img
           className="collage-img"
-          src={Images.Christmas}
-          alt="CBC Christmas"
+          src={Images.Circulate}
+          alt="Circulate"
           width="300"
         />
-        {showInfo4 && (
-          <div className="appear">
-            <a href="http://www.cbcchristmas.com" target="_blank">
-              CBC Christmas
+        {showInfo1 && (
+          <div className="appear toggleAppearance">
+            <a href="https://circulate-app.vercel.app/" target="_blank">
+              Circulate APP
             </a>
-            <p>HTML | CSS | JS</p>
+            <a
+              href="https://github.com/paul88vera/CirculateAPP"
+              target="_blank">
+              Repository
+            </a>
+            <p>T3STACK | TYPESCRIPT | CLERK</p>
+            <i class="fa-solid fa-angle-down" onClick={toggleAppearance}></i>
+          </div>
+        )}
+      </div>
+
+      <div className="collage-card" onClick={toggleAppearance2}>
+        <img
+          className="collage-img"
+          src={Images.Students}
+          alt="CBC Student Camp"
+          width="300"
+        />
+        {showInfo2 && (
+          <div className="appear">
+            <a
+              href="http://studentcamp.s3-website-us-east-1.amazonaws.com/"
+              target="_blank">
+              CBC Student Camp
+            </a>
+            <a
+              href="https://github.com/paul88vera/student-camp"
+              target="_blank">
+              Repository
+            </a>
+            <p>REACT | JS | WordPress</p>
+            <i class="fa-solid fa-angle-down" onClick={toggleAppearance}></i>
           </div>
         )}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default All;
+export default All
