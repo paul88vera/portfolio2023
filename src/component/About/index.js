@@ -52,10 +52,11 @@ export default function About() {
         </p>
         <p>
           I am eager to learn new technologies and am committed to keeping up
-          with the latest developments in the field, such as developing in a
-          T3Stack frameworks that require knowledge of Typescript. In my spare
-          time, I enjoy utilizing Linux operating systems in HackTheBox to
-          continue my cybersecurity and technical knowledge base.
+          with the latest developments in the field, such as developing in
+          Typescript, Next.js, and using different development stacks to hone my
+          skills. In my spare time, I enjoy utilizing Linux operating systems
+          and Virtual Private Networks in HackTheBox to continue my
+          cybersecurity, and technical knowledge base.
         </p>
         <p>
           I am excited to bring my skills and experience to a forward-thinking
