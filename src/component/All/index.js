@@ -11,7 +11,7 @@ const All = () => {
 
   const toggleAppearance = () => {
     setShowInfo(!showInfo)
-    collageImg.style.display = "none"
+    // collageImg.style.display = "none"
   }
   const toggleAppearance1 = () => {
     setShowInfo1(!showInfo1)

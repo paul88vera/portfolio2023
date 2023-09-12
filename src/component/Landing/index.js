@@ -15,7 +15,33 @@ export default function Landing() {
             developer.
           </p>
           <a href="#experience" className="btn-two">
-            Experience & Certifications
+            <span className="landing--h--letter">E</span>
+            <span className="landing--h--letter">x</span>
+            <span className="landing--h--letter">p</span>
+            <span className="landing--h--letter">e</span>
+            <span className="landing--h--letter">r</span>
+            <span className="landing--h--letter">i</span>
+            <span className="landing--h--letter">e</span>
+            <span className="landing--h--letter">n</span>
+            <span className="landing--h--letter">c</span>
+            <span className="landing--h--letter">e</span>
+            <span className="hidden-leter">|</span>
+            <span className="landing--h--letter">&</span>
+            <span className="hidden-leter">|</span>
+            <span className="landing--h--letter">C</span>
+            <span className="landing--h--letter">e</span>
+            <span className="landing--h--letter">r</span>
+            <span className="landing--h--letter">t</span>
+            <span className="landing--h--letter">i</span>
+            <span className="landing--h--letter">f</span>
+            <span className="landing--h--letter">i</span>
+            <span className="landing--h--letter">c</span>
+            <span className="landing--h--letter">a</span>
+            <span className="landing--h--letter">t</span>
+            <span className="landing--h--letter">i</span>
+            <span className="landing--h--letter">o</span>
+            <span className="landing--h--letter">n</span>
+            <span className="landing--h--letter">s</span>
           </a>
         </div>
       </section>
