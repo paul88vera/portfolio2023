@@ -39,27 +39,28 @@ export default function About() {
         <h1>About Me</h1>
         <h3>Full Stack Developer</h3>
         <p>
-          I am a developer who has a passion for creating responsive and
+          I am a React developer who has a passion for creating responsive and
           functional websites. I have a strong background in diverse creative
           occupations and have experience with a variety of programming
           languages, including HTML, CSS, JavaScript, and Python.
         </p>
         <p>
-          I am skilled in front-end and back-end development, and have a strong
-          knowledge in frameworks like Vue, React, and JQuery. In my previous
-          roles, I have successfully designed and developed various web and
-          mobile applications.
+          I am skilled in front-end development, and have strong knowledge in
+          frameworks like React, TailwindCSS, and JQuery. In my previous roles,
+          I have successfully designed, and developed various web and mobile
+          applications.
         </p>
         <p>
           I am eager to learn new technologies and am committed to keeping up
-          with the latest developments in the field. In my spare time, I enjoy
-          utilizing HackTheBox challenges and finding bugs in HackerOne
-          companies to continue my cybersecurity knowledge.
+          with the latest developments in the field, such as developing in a
+          T3Stack frameworks that require knowledge of Typescript. In my spare
+          time, I enjoy utilizing Linux operating systems in HackTheBox to
+          continue my cybersecurity and technical knowledge base.
         </p>
         <p>
           I am excited to bring my skills and experience to a forward-thinking
-          and dynamic team. I am eager to help develop innovative software
-          solutions that will meet the needs of users.
+          team. I am eager to help develop innovative software solutions that
+          will meet the needs of many users.
         </p>
         <div id="social-cont">
           <ul>
