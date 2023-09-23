@@ -1,6 +1,5 @@
 import PortHeader from "../PortHeader"
 import All from "../All"
-// import Work from "../../props"
 
 const Portfolio = () => {
   return (
@@ -10,7 +9,6 @@ const Portfolio = () => {
       </nav>
       <div id="gallery">
         <All />
-        {/* <Work /> */}
       </div>
     </section>
   )

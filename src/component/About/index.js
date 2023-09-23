@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import aboutImg from "../../img/about.png"
 
 export default function About() {
+  // handles the "+" icon rotation on scroll
   useEffect(() => {
     const handleScroll = () => {
       const icon0 = document.getElementById("icon0")
@@ -37,7 +38,7 @@ export default function About() {
       </div>
       <div id="about-para">
         <h1>About Me</h1>
-        <h3>Full Stack Developer</h3>
+        <h3>Front-End Developer</h3>
         <p>
           I am a React developer who has a passion for creating responsive and
           functional websites. I have a strong background in diverse creative

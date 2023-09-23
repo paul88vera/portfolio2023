@@ -9,7 +9,7 @@ export default function Landing() {
           <h1>
             Paul <span>Vera</span>
           </h1>
-          <h3>Full Stack Developer</h3>
+          <h3>Front-End Developer</h3>
           <p>
             I am a forever learner. I am a dreamer. I am an optimist. I am a
             developer.

@@ -4,24 +4,33 @@ import Images from "../../constants/images"
 
 const All = () => {
   const [showInfo, setShowInfo] = useState(false)
-  const [showInfo1, setShowInfo1] = useState(false)
   const [showInfo2, setShowInfo2] = useState(false)
-
-  const collageImg = document.getElementsByClassName("collage-img")
+  const [showInfo3, setShowInfo3] = useState(false)
+  const [showInfo4, setShowInfo4] = useState(false)
 
   const toggleAppearance = () => {
     setShowInfo(!showInfo)
-    // collageImg.style.display = "none"
   }
-  const toggleAppearance1 = () => {
-    setShowInfo1(!showInfo1)
-  }
+
   const toggleAppearance2 = () => {
     setShowInfo2(!showInfo2)
+  }
+  const toggleAppearance3 = () => {
+    setShowInfo3(!showInfo3)
+  }
+  const toggleAppearance4 = () => {
+    setShowInfo4(!showInfo4)
   }
 
   return (
     <section id="All">
+      <img
+        src={Images.Mob}
+        alt="mobile darkmode ui sample #1"
+        width="300"
+        className="ui-img-card img-1"
+      />
+
       <div className="collage-card" onClick={toggleAppearance}>
         <img
           className="collage-img"
@@ -47,7 +56,8 @@ const All = () => {
         )}
       </div>
 
-      <div className="collage-card" onClick={toggleAppearance1}>
+      {/* This is an unfinished project template */}
+      {/* <div className="collage-card" onClick={toggleAppearance1}>
         <img
           className="collage-img"
           src={Images.Circulate}
@@ -68,7 +78,7 @@ const All = () => {
             <i class="fa-solid fa-angle-down" onClick={toggleAppearance}></i>
           </div>
         )}
-      </div>
+      </div> */}
 
       <div className="collage-card" onClick={toggleAppearance2}>
         <img
@@ -90,6 +100,42 @@ const All = () => {
               Repository
             </a>
             <p>REACT | JS | WordPress</p>
+            <i class="fa-solid fa-angle-down" onClick={toggleAppearance}></i>
+          </div>
+        )}
+      </div>
+
+      <div className="collage-card" onClick={toggleAppearance3}>
+        <img
+          className="collage-img"
+          src={Images.Inspired}
+          alt="Inspired"
+          width="300"
+        />
+        {showInfo3 && (
+          <div className="appear">
+            <a href="https://inspireddentistrypc.com/" target="_blank">
+              Inspired Dentistry
+            </a>
+            <p>CSS | JS | WordPress</p>
+            <i class="fa-solid fa-angle-down" onClick={toggleAppearance}></i>
+          </div>
+        )}
+      </div>
+
+      <div className="collage-card" onClick={toggleAppearance4}>
+        <img
+          className="collage-img"
+          src={Images.Gower}
+          alt="Gower"
+          width="300"
+        />
+        {showInfo4 && (
+          <div className="appear">
+            <a href="https://gowerfamilydentistry.com/" target="_blank">
+              Gower Family Dentistry
+            </a>
+            <p>CSS | JS | WordPress</p>
             <i class="fa-solid fa-angle-down" onClick={toggleAppearance}></i>
           </div>
         )}

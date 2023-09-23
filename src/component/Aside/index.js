@@ -30,6 +30,18 @@ export default function Aside() {
           </li>
         </ul>
       </div>
+      <div className="aside-bottom">
+        <p id="made">
+          Made with{" "}
+          <a href="https://react.dev/" target="_blank" rel="noreferrer">
+            <span className="landing--h--letter">R</span>
+            <span className="landing--h--letter">e</span>
+            <span className="landing--h--letter">a</span>
+            <span className="landing--h--letter">c</span>
+            <span className="landing--h--letter">t</span>
+          </a>
+        </p>
+      </div>
     </aside>
   )
 }

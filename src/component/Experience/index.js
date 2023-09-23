@@ -9,7 +9,7 @@ export default function Experience() {
           <div className="card">
             <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
-              <h2 className="card-title">Front End Engineer</h2>
+              <h2 className="card-title">Front-End Engineer</h2>
               <h4 className="card-subtext">
                 Transcendental (May 2023 - Present)
               </h4>
