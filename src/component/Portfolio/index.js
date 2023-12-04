@@ -1,5 +1,5 @@
-import PortHeader from "../PortHeader"
-import All from "../All"
+import PortHeader from "../PortHeader";
+import All from "../All";
 
 const Portfolio = () => {
   return (
@@ -11,7 +11,7 @@ const Portfolio = () => {
         <All />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

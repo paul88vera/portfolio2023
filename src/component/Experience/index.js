@@ -9,14 +9,14 @@ export default function Experience() {
           <div className="card">
             <i className="fa-solid fa-ghost"></i>
             <div className="card-box">
-              <h2 className="card-title">Front-End Engineer</h2>
+              <h2 className="card-title">Senior Web Developer</h2>
               <h4 className="card-subtext">
                 Transcendental (May 2023 - Present)
               </h4>
               <p className="card-para">
                 Skills: Website & Domain Management, Website Development,
                 Component/Template builds, Client Website Transfers & Edits,
-                HTML, CSS, JS, REACT
+                Client Application, HTML, CSS, JS, REACT
               </p>
             </div>
           </div>
@@ -157,5 +157,5 @@ export default function Experience() {
         </div>
       </div>
     </section>
-  )
+  );
 }
