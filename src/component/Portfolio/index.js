@@ -1,5 +1,5 @@
 import PortHeader from "../PortHeader";
-import All from "../All";
+import Work from "../Work";
 
 const Portfolio = () => {
   return (
@@ -8,7 +8,7 @@ const Portfolio = () => {
         <PortHeader />
       </nav>
       <div id="gallery">
-        <All />
+        <Work />
       </div>
     </section>
   );

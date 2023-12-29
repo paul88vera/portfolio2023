@@ -28,6 +28,24 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-bg-color);
 }
+.btn-modal {
+  background-color: var(--accent-bg-color);
+  color: var(--tri-bg-color);
+  padding: 0.5em 0.7em;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1rem;
+  border-radius: 3px;
+  scale: 100%;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+}
+.btn-modal:hover {
+  background-color: #136566;
+  scale: 105%;
+}
 /*-------------------------------
 // ASIDE SECTION - START 
 -------------------------------*/
@@ -522,6 +540,7 @@ button {
   z-index: 5;
   margin-bottom: 0px;
   background-color: var(--secondary-bg-color);
+  user-select: none;
 }
 .appear a {
   color: #198f91;
@@ -589,8 +608,12 @@ button {
   text-decoration: none;
   background-color: transparent;
   border-bottom: solid 3px transparent;
-  padding: 1em;
+  padding: 0.5em 1em;
   position: relative;
+  left: 2%;
+  top: -80px;
+  width: 80%;
+  text-align: center;
 }
 #myLinks a:hover {
   border-bottom: solid 3px var(--tri-bg-color);
@@ -627,6 +650,7 @@ button {
   background-color: var(--main-bg-color);
   color: var(--accent-bg-color);
   z-index: 9999;
+  clear: both;
 }
 .exe:hover {
   background-color: var(--main-bg-color);
@@ -635,6 +659,28 @@ button {
 .bars {
   color: var(--accent-bg-color);
 }
+.mobile-nav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+.mobile-nav-footer a {
+  width: 100%;
+  position: relative;
+  right: 0;
+  margin: 0 auto;
+  color: white;
+  font-size: 1rem;
+  background-color: var(--accent-bg-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 1em 2em;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
