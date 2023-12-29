@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Modal from "../../props/Card";
+import Images from '../../constants/images'
 
 const cards = [
   {
     id: 0,
     name: "CBC Champion Plaza",
-    img: "https://s3.amazonaws.com/paulvera.com/static/media/ChampionPlaza.0dd292a6cb5e6ef70da9.png",
+    img: Images.Champ,
     repoLink: "https://github.com/paul88vera/champion-plaza",
     webLink: "http://championplazatemp.s3-website-us-east-1.amazonaws.com/",
     para: "UX/UI | REACT | TAILWINDCSS | BLOGGER API",
@@ -14,7 +15,7 @@ const cards = [
   {
     id: 1,
     name: "Circulate",
-    img: "https://s3.amazonaws.com/paulvera.com/static/media/Circulate.c10eef91acafcb09a075.png",
+    img: Images.Circulate,
     repoLink: "https://github.com/paul88vera/circulateApp",
     webLink: "https://circulate-app.vercel.app/",
     para: "UX/UI | NEXT | TYPESCRIPT | TAILWINDCSS",
@@ -23,7 +24,7 @@ const cards = [
   {
     id: 2,
     name: "Gower Family Dentistry",
-    img: "https://s3.amazonaws.com/paulvera.com/static/media/Gower.300f7aadfa77bc566e5f.jpg",
+    img: Images.Gower,
     repoLink: "#",
     webLink: "https://gowerfamilydentistry.com/",
     para: "UI | CSS | JS | WORDPRESS",
@@ -32,7 +33,7 @@ const cards = [
   {
     id: 3,
     name: "Inspired Dentistry",
-    img: "https://s3.amazonaws.com/paulvera.com/static/media/Inspired.d445a2b438813f2c4697.jpg",
+    img: Images.Inspired,
     repoLink: "#",
     webLink: "https://inspireddentistrypc.com/",
     para: "UI | CSS | JS | WORDPRESS",
@@ -41,7 +42,7 @@ const cards = [
   {
     id: 4,
     name: "Client App (In Development)",
-    img: "https://s3.amazonaws.com/paulvera.com/static/media/mobile_ui.ffe376859412f80cf243.gif",
+    img: Images.Mob,
     repoLink: "#",
     webLink:
       "https://www.figma.com/file/uiJMOdpq5hEpAotRVqGNHo/Transcendental-Client-Application?type=design&node-id=0-1&mode=design&t=R1PgSVGwzgEgHaq0-0",
