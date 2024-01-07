@@ -57,6 +57,9 @@ export default function Burger() {
               }}>
               Portfolio
             </a>
+            <a href="/resume" target="_blank">
+              Resume
+            </a>
           </div>
           <div className="mobile-nav-footer">
             <a href="tel:+12105019271">CALL</a>

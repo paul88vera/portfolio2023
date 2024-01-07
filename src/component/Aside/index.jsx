@@ -1,4 +1,4 @@
-import Images from "../../constants/images"
+import Images from "../../constants/images";
 
 export default function Aside() {
   return (
@@ -9,23 +9,28 @@ export default function Aside() {
       <div className="aside-nav">
         <ul>
           <li>
-            <a href="#home">
+            <a href="/#home">
               <i className="fa-solid fa-house"></i>Home
             </a>
           </li>
           <li>
-            <a href="#about">
+            <a href="/#about">
               <i className="fa-solid fa-address-card"></i>About
             </a>
           </li>
           <li>
-            <a href="#experience">
+            <a href="/#experience">
               <i className="fa-solid fa-graduation-cap"></i>Experience
             </a>
           </li>
           <li>
-            <a href="#portfolio">
+            <a href="/#portfolio">
               <i className="fa-solid fa-briefcase"></i>Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="/resume" target="_blank">
+              <i className="fa-solid fa-file"></i>Resume
             </a>
           </li>
         </ul>
@@ -43,5 +48,5 @@ export default function Aside() {
         </p>
       </div>
     </aside>
-  )
+  );
 }
