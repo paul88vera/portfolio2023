@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Modal from "../../props/Card";
-import Images from '../../constants/images'
+import Images from "../../constants/images";
 
 const cards = [
   {
     id: 0,
     name: "CBC Champion Plaza",
-    img: Images.Champ,
+    img: Images.cbc,
     repoLink: "https://github.com/paul88vera/champion-plaza",
     webLink: "http://championplazatemp.s3-website-us-east-1.amazonaws.com/",
     para: "UX/UI | REACT | TAILWINDCSS | BLOGGER API",
@@ -14,40 +14,58 @@ const cards = [
   },
   {
     id: 1,
-    name: "Circulate",
-    img: Images.Circulate,
-    repoLink: "https://github.com/paul88vera/circulateApp",
-    webLink: "https://circulate-app.vercel.app/",
-    para: "UX/UI | NEXT | TYPESCRIPT | TAILWINDCSS",
-    type: "NEXT",
+    name: "Client App (In Development)",
+    img: Images.Mob,
+    repoLink: "https://github.com/paul88vera/",
+    webLink:
+      "https://www.figma.com/file/uiJMOdpq5hEpAotRVqGNHo/Transcendental-Client-Application?type=design&node-id=0-1&mode=design&t=R1PgSVGwzgEgHaq0-0",
+    para: "UX/UI | REACT | TAILWINDCSS | AUTH0 | ZOHO API",
+    type: "REACT",
   },
   {
     id: 2,
-    name: "Gower Family Dentistry",
-    img: Images.Gower,
+    name: "10-4 Woodworks (In Development)",
+    img: Images.tfww,
+    repoLink: "https://github.com/paul88vera/104-WoodWorks",
+    webLink: "#",
+    para: "UX/UI | REACT | CSS | CLERK | MONGODB",
+    type: "REACT",
+  },
+  {
+    id: 3,
+    name: "Circulate",
+    img: Images.circulate,
+    repoLink: "https://github.com/paul88vera/circulateApp",
+    webLink: "https://circulate-app.vercel.app/",
+    para: "UX/UI | NEXT | TYPESCRIPT | TAILWINDCSS | CLERK",
+    type: "NEXT",
+  },
+  {
+    id: 4,
+    name: "Inspire Dental Center",
+    img: Images.inspire,
     repoLink: "#",
-    webLink: "https://gowerfamilydentistry.com/",
+    webLink: "https://inspirefirestone.com/",
     para: "UI | CSS | JS | WORDPRESS",
     type: "WORDPRESS",
   },
   {
-    id: 3,
+    id: 5,
     name: "Inspired Dentistry",
-    img: Images.Inspired,
+    img: Images.inspired,
     repoLink: "#",
     webLink: "https://inspireddentistrypc.com/",
     para: "UI | CSS | JS | WORDPRESS",
     type: "WORDPRESS",
   },
   {
-    id: 4,
-    name: "Client App (In Development)",
-    img: Images.Mob,
+    id: 6,
+    name: "Gower Family Dentistry",
+    img: Images.gower,
     repoLink: "#",
-    webLink:
-      "https://www.figma.com/file/uiJMOdpq5hEpAotRVqGNHo/Transcendental-Client-Application?type=design&node-id=0-1&mode=design&t=R1PgSVGwzgEgHaq0-0",
-    para: "UX/UI | REACT | SCSS | VELOX API",
-    type: "REACT",
+    webLink: "https://gowerfamilydentistry.com/",
+    para: "UI | CSS | JS | WORDPRESS",
+    type: "WORDPRESS",
   },
 ];
 
@@ -123,7 +141,7 @@ export default function Work() {
                 onClick={() => openModal(index)}>
                 <img
                   src={card.img}
-                  style={{ width: "190px", height: "395px", margin: "0 auto" }}
+                  style={{ width: "290px", height: "500px", margin: "0 auto" }}
                   alt={card.name}
                   width="300"
                   className="collage-img"

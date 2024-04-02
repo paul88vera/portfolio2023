@@ -1,20 +1,24 @@
 /*eslint-disable*/
-import Students from "../img/Students.png";
-import Champ from "../img/ChampionPlaza.png";
-import Circulate from "../img/Circulate.png";
-import Me from "../img/PaulCropped.jpg";
-import Inspired from "../img/Inspired.jpg";
-import Gower from "../img/Gower.jpg";
+
+import Me from "../img/PaulCropped.webp";
 import Mob from "../img/mobile_ui.gif";
-import resume from "../img/Paul_Vera__Resume.pdf";
+import resume from "../img/PaulVera_Resume_032824.pdf";
+import cbc from '../img/cbc.webp';
+import circulate from '../img/circulate.webp'
+import gower from '../img/gower.webp';
+import inspire from '../img/inspire.webp'
+import inspired from '../img/inspired.webp'
+import tfww from '../img/tfww.webp';
+
 
 export default {
-  Students,
-  Champ,
-  Circulate,
   Me,
-  Inspired,
-  Gower,
   Mob,
   resume,
+  cbc,
+  circulate,
+  gower,
+  inspire,
+  inspired,
+  tfww
 };

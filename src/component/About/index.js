@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-import aboutImg from "../../img/about.png"
+import aboutImg from "../../img/about.webp"
 
 export default function About() {
   // handles the "+" icon rotation on scroll

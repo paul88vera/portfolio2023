@@ -150,7 +150,8 @@ body {
   font-size: 18px;
   background-color: rgb(133, 133, 133);
   background-blend-mode: overlay;
-  background-image: url(/public/assets/img/hero.jpg);
+  background-image: url(/public/assets/img/hero.webp);
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

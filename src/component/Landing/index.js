@@ -1,4 +1,4 @@
-import Nav from "../Nav"
+import Nav from "../Nav";
 
 export default function Landing() {
   return (
@@ -11,7 +11,7 @@ export default function Landing() {
           </h1>
           <h3>Front-End Developer</h3>
           <p>
-            I am a forever learner. I am a dreamer. I am an optimist. I am a
+            I am a learner. I am a problem solver. I am an optimist. I am a
             developer.
           </p>
           <a href="#experience" className="btn-two">
@@ -46,5 +46,5 @@ export default function Landing() {
         </div>
       </section>
     </div>
-  )
+  );
 }
