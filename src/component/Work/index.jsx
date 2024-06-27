@@ -16,8 +16,9 @@ const cards = [
     id: 1,
     name: "Client App (In Development)",
     img: Images.Mob,
-    repoLink: "https://github.com/paul88vera/",
-    webLink:
+    repoLink: "https://github.com/transcendentalagency/clientApp",
+    webLink: "https://evident-zeta.vercel.app/",
+    figLink:
       "https://www.figma.com/file/uiJMOdpq5hEpAotRVqGNHo/Transcendental-Client-Application?type=design&node-id=0-1&mode=design&t=R1PgSVGwzgEgHaq0-0",
     para: "UX/UI | REACT | TAILWINDCSS | AUTH0 | ZOHO API",
     type: "REACT",
