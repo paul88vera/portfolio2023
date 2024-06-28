@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Modal from "../../props/Card";
 import Images from "../../constants/images";
+// import Card from "../../props/Card";
+import Modal from "../../props/Modal";
 
 const cards = [
   {
@@ -71,7 +72,7 @@ const cards = [
 ];
 
 export default function Work() {
-  const [isModalOpen, setModalOpen] = useState(null);
+  const [isModalOpen, setModalOpen] = useState();
   const [filterType, setFilterType] = useState(null);
 
   // Modal opens by index/key
@@ -79,7 +80,8 @@ export default function Work() {
     setModalOpen(index);
   };
 
-  const closeModal = () => {
+  // Modal Closes if open
+  const clearModal = () => {
     setModalOpen(null);
   };
 
@@ -136,10 +138,7 @@ export default function Work() {
         {filteredArray.map(
           (card, index) =>
             (filterType === null || card.type === filterType) && (
-              <div
-                className="collage-card"
-                key={index}
-                onClick={() => openModal(index)}>
+              <div className="collage-card" key={index}>
                 <img
                   src={card.img}
                   style={{ width: "290px", height: "500px", margin: "0 auto" }}
@@ -147,6 +146,7 @@ export default function Work() {
                   width="300"
                   className="collage-img"
                   draggable="false"
+                  onClick={() => openModal(index)}
                 />
                 {isModalOpen === index && (
                   <Modal
@@ -155,7 +155,7 @@ export default function Work() {
                     para={card.para}
                     repoLink={card.repoLink}
                     isOpen={true}
-                    onClose={closeModal}
+                    onClose={clearModal}
                   />
                 )}
               </div>
