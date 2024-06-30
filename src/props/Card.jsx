@@ -1,4 +1,4 @@
-const Modal = ({ isOpen, onClick, name, repoLink, webLink, para }) => {
+const Card = ({ isOpen, onClick, name, repoLink, webLink, para }) => {
   if (!isOpen) return null;
 
   return (
@@ -15,4 +15,4 @@ const Modal = ({ isOpen, onClick, name, repoLink, webLink, para }) => {
     </div>
   );
 };
-export default Modal;
+export default Card;
