@@ -1,15 +1,13 @@
 import { createPortal } from "react-dom";
-import { Link } from "react-router-dom";
 
 const Modal = ({
   isOpen,
   onClose,
   name,
   repoLink,
-  caseStudy,
+  // caseStudy,
   webLink,
   para,
-  img,
 }) => {
   if (!isOpen) return null;
 
@@ -36,21 +34,23 @@ const Modal = ({
         </div>
         <div className="modal__link-btn-container">
           {repoLink !== "#" ? (
-            <Link
-              to={repoLink}
+            <a
+              href={repoLink}
               className="modal__btn"
               target="_blank"
-              rel="noreferrer noopener">
+              rel="noreferrer">
               Repository
-            </Link>
+            </a>
           ) : null}
-          <Link
-            to={webLink}
-            className="modal__web-btn"
-            target="_blank"
-            rel="noreferrer noopener">
-            View {name}
-          </Link>
+          {webLink !== "#" ? (
+            <a
+              href={webLink}
+              className="modal__web-btn"
+              target="_blank"
+              rel="noreferrer">
+              View Site
+            </a>
+          ) : null}
         </div>
       </div>
     </div>,
