@@ -1,31 +1,31 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
 
-import aboutImg from "../../img/about.webp"
+import aboutImg from "../../img/about.webp";
 
 export default function About() {
   // handles the "+" icon rotation on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const icon0 = document.getElementById("icon0")
-      const icon1 = document.getElementById("icon1")
-      const icon2 = document.getElementById("icon2")
-      const icon3 = document.getElementById("icon3")
-      const icon4 = document.getElementById("icon4")
+      // const icon0 = document.getElementById("icon0");
+      const icon1 = document.getElementById("icon1");
+      const icon2 = document.getElementById("icon2");
+      const icon3 = document.getElementById("icon3");
+      // const icon4 = document.getElementById("icon4");
 
-      const rotation = window.pageYOffset / 5
-      icon0.style.transform = `rotate(${rotation}deg)`
-      icon1.style.transform = `rotate(${rotation}deg)`
-      icon2.style.transform = `rotate(${rotation}deg)`
-      icon3.style.transform = `rotate(${rotation}deg)`
-      icon4.style.transform = `rotate(${rotation}deg)`
-    }
+      const rotation = window.pageYOffset / 5;
+      // icon0.style.transform = `rotate(${rotation}deg)`;
+      icon1.style.transform = `rotate(${rotation}deg)`;
+      icon2.style.transform = `rotate(${rotation}deg)`;
+      icon3.style.transform = `rotate(${rotation}deg)`;
+      // icon4.style.transform = `rotate(${rotation}deg)`;
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section id="about">
@@ -66,10 +66,10 @@ export default function About() {
         </p>
         <div id="social-cont">
           <ul>
-            <li>
+            {/* <li>
               <i id="icon0" className="fa-solid fa-plus rotate-icon"></i>
               Paul Vera
-            </li>
+            </li> */}
             <li>
               <i id="icon1" className="fa-solid fa-plus rotate-icon"></i>
               paul88vera@gmail.com
@@ -82,13 +82,13 @@ export default function About() {
               <i id="icon3" className="fa-solid fa-plus rotate-icon"></i>Texas,
               USA
             </li>
-            <li>
+            {/* <li>
               <i id="icon4" className="fa-solid fa-plus rotate-icon"></i>
               210-501-9271
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
     </section>
-  )
+  );
 }

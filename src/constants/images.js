@@ -2,14 +2,13 @@
 
 import Me from "../img/PaulCropped.webp";
 import Mob from "../img/mobile_ui.gif";
-import resume from "../img/PaulVera_Resume_032824.pdf";
-import cbc from '../img/cbc.webp';
-import circulate from '../img/circulate.webp'
-import gower from '../img/gower.webp';
-import inspire from '../img/inspire.webp'
-import inspired from '../img/inspired.webp'
-import tfww from '../img/tfww.webp';
-
+import resume from "../img/PaulVera_Resume.pdf";
+import cbc from "../img/cbc.webp";
+import circulate from "../img/circulate.webp";
+import gower from "../img/gower.webp";
+import inspire from "../img/inspire.webp";
+import inspired from "../img/inspired.webp";
+import tfww from "../img/tfww.webp";
 
 export default {
   Me,
@@ -20,5 +19,5 @@ export default {
   gower,
   inspire,
   inspired,
-  tfww
+  tfww,
 };
