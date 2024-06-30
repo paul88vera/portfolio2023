@@ -27,10 +27,11 @@ const Modal = ({
           <div className="modal__info-column">
             <h2 className="modal__title">{name}</h2>
             <h3 className="modal__para">{para}</h3>
-            <div className="modal__about-project">
+            {/*  */}
+            {/* <div className="modal__about-project">
               <h3>About This Project:</h3>
               <p>{caseStudy}</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="modal__link-btn-container">
