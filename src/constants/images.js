@@ -9,6 +9,7 @@ import gower from "../img/gower.webp";
 import inspire from "../img/inspire.webp";
 import inspired from "../img/inspired.webp";
 import tfww from "../img/tfww.webp";
+import dlp from "../img/DLP.webp";
 
 export default {
   Me,
@@ -20,4 +21,5 @@ export default {
   inspire,
   inspired,
   tfww,
+  dlp,
 };
