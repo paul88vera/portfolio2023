@@ -5,7 +5,7 @@ const Modal = ({
   onClose,
   name,
   repoLink,
-  // caseStudy,
+  caseStudy,
   webLink,
   para,
 }) => {
@@ -25,11 +25,10 @@ const Modal = ({
           <div className="modal__info-column">
             <h2 className="modal__title">{name}</h2>
             <h3 className="modal__para">{para}</h3>
-            {/*  */}
-            {/* <div className="modal__about-project">
+            <div className="modal__about-project">
               <h3>About This Project:</h3>
               <p>{caseStudy}</p>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="modal__link-btn-container">
@@ -38,7 +37,7 @@ const Modal = ({
               href={repoLink}
               className="modal__btn"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer noopener">
               Repository
             </a>
           ) : null}
@@ -47,7 +46,7 @@ const Modal = ({
               href={webLink}
               className="modal__web-btn"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer noopener">
               View Site
             </a>
           ) : null}
