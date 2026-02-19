@@ -11,6 +11,7 @@ import projScheduler from "../img/projScheduler.webp";
 import passManager from "../img/passManager.webp";
 import whiteTooth from "../img/whiteTooth.webp";
 import AMG from "../img/AMG.webp";
+import chatBot from "../img/ChatBot.png";
 
 export default {
   Me,
@@ -24,4 +25,5 @@ export default {
   passManager,
   whiteTooth,
   AMG,
+  chatBot
 };

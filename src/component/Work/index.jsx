@@ -4,17 +4,27 @@ import Modal from "../../props/Modal";
 
 const cards = [
   {
-    id: 0,
+    id: 8,
+    name: "ChatBox Inc.",
+    img: Images.chatBot,
+    repoLink: "https://github.com/paul88vera/ChatBot",
+    webLink: "https://chatbox.verafied.tech/",
+    para: "UX/UI | REACT | JSX | CSS | MYSQL",
+    type: "REACT",
+    case: "This is an AI-powered chatbot application, (Grok Mini), built with React on the frontend and a Node.js backend, designed to provide real-time, intelligent conversational support through a simple embeddable interface. It allows businesses to integrate a customizable chat widget into their websites, enabling automated responses, user interaction tracking, and scalable communication workflows. I implemented a modular architecture with secure API handling and dynamic configuration to support multi-tenant use cases. Features like responsive design, asynchronous messaging, and easy deployment make it a flexible solution for enhancing customer engagement and support automation. PLEASE EMAIL ME FOR DEMO ACCESS IF INTERESTED IN VIEWING THE APPLICATION.",
+  },
+  {
+    id: 1,
     name: "Password Manager",
     img: Images.passManager,
     repoLink: "https://github.com/paul88vera/Password_Manager",
-    webLink: "#",
+    webLink: "https://app.verafied.tech/",
     para: "UX/UI | REACT | JSX | TAILWINDCSS | MYSQL",
     type: "REACT",
     case: "This project is a React-based password manager designed to support multiple users in maintaining a secure, centralized repository of client credentials—ideal for teams or agencies managing credentials across many websites. I built both the front-end and back-end to ensure seamless data flow, implementing secure authentication, role-based access, and encrypted storage for sensitive information. The application emphasizes usability and security, with responsive design elements and robust state management to deliver a smooth, reliable experience across devices.",
   },
   {
-    id: 1,
+    id: 2,
     name: "Project Scheduler",
     img: Images.projScheduler,
     repoLink: "https://github.com/paul88vera/ProjectScheduler",
@@ -24,7 +34,7 @@ const cards = [
     case: "This is a project scheduling application built with React on the front end and MySQL on the back end. It enables teams to plan, track, and manage tasks through an intuitive interface, offering features like timeline views, task assignment, and status tracking. I implemented a clean architecture with RESTful APIs and optimized database design to ensure data integrity and performance. Responsive layout, efficient state management, and solid error handling make it a reliable tool that scales well across devices and user load.",
   },
   {
-    id: 2,
+    id: 3,
     name: "10-4 Woodworks",
     img: Images.tfww,
     repoLink: "https://github.com/paul88vera/104-WoodWorks",
@@ -34,7 +44,7 @@ const cards = [
     case: "I developed this website for a client and will also use it as a template for showcasing potential e-commerce websites built with React. The site includes administrative logins, allowing administrators to easily create and delete shop items. Basic CRUD operations were implemented exclusively for administrators using Clerk. While basic users can log in, they cannot view administrator profiles or actions, but they can save their cart items for later use. An online payment API will be integrated at a later stage once the client is satisfied with the development. This project is currently in development and is expected to be completed this year. Please feel free to view the repository.",
   },
   {
-    id: 3,
+    id: 4,
     name: "Client App",
     img: Images.Mob,
     repoLink: "https://github.com/transcendentalagency/clientApp",
@@ -46,7 +56,7 @@ const cards = [
     case: "I developed the front-end for an analytics dashboard for a marketing company. The required features included creating a business ready and readable design for clients with no real technology experience. I implemented the design according to the marketing company's specifications, and this was validated by their graphic designers. Future enhancements of the application will include new features such as an online payment option via the QuickBooks API and a bulk API call to request a broader range of data. The application utilizes Auth0 for authentication and will incorporate administrator roles upon production release. Currently, the application is still in development with Auth0 temporarily disabled for viewing purposes. It will soon enter the alpha testing phase.",
   },
   {
-    id: 4,
+    id: 5,
     name: "CBC Champion Plaza",
     img: Images.cbc,
     repoLink: "https://github.com/paul88vera/champion-plaza",
@@ -56,7 +66,7 @@ const cards = [
     case: "I designed this website as an advertisement for the Community Bible Church Champion Plaza, aimed at attracting interest and investment in the plaza. To meet their preferred use case, I integrated the Blogger API to inform users of upcoming events. The website is currently not in production, as I was the sole maintainer and have since left the company. However, this is my recreation of the website, now connected to a temporary Blogger API as a placeholder.",
   },
   {
-    id: 5,
+    id: 6,
     name: "Parkway Modern",
     img: Images.parkway,
     repoLink: "#",
@@ -66,7 +76,7 @@ const cards = [
     case: "I developed this website in WordPress using Elementor, focusing on delivering a modern and professional design tailored to the client's brand. The site was optimized for speed, responsiveness, and user experience, ensuring seamless performance across all devices. By implementing best practices in layout and functionality, I created a platform that effectively highlights the client's services while maintaining a clean, accessible, and engaging interface.",
   },
   {
-    id: 6,
+    id: 7,
     name: "White Tooth Dental",
     img: Images.whiteTooth,
     repoLink: "#",
@@ -76,7 +86,7 @@ const cards = [
     case: "I developed the White Tooth Dental website using WordPress and Elementor, ensuring a clean, modern look that reflects the clinic's dedication to holistic and patient-focused dental care. The site is fully responsive and optimized for speed, delivering a seamless experience across devices. Accessibility, intuitive navigation, and a thoughtful layout allow prospective patients to easily explore services, meet the team, and engage with the practice, while reinforcing trust and professionalism throughout.",
   },
   {
-    id: 7,
+    id: 8,
     name: "DLP Services",
     img: Images.dlp,
     repoLink: "#",
